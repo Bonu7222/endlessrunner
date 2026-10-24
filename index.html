@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Runner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="gameCanvas"></canvas>
+
+    <div class="ui-layer">
+        <div class="hud">
+            <div class="score-box">
+                <span>SCORE</span>
+                <strong id="scoreDisplay">0</strong>
+            </div>
+        </div>
+
+        <div class="overlay" id="startScreen">
+            <h1>NEON RUNNER</h1>
+            <p>Space / click / Tap to jump</p>
+            <p class="small">Double jump is allowed</p>
+            <button id="startBtn">START</button>
+        </div>
+
+        <div class="overlay hidden" id="gameOverScreen">
+            <h2>GAME OVER</h2>
+            <p>Distance: <span id="finalScore">0</span>m</p>
+            <button id="restartBtn">TRY AGAIN</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
